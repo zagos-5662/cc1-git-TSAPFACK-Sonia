@@ -1,0 +1,285 @@
+/* ===========================
+   RESET & BASE
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background: #0d2b6e;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* ===========================
+   FOND BLEU — DÉGRADÉ
+=========================== */
+.bg-bleu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: linear-gradient(135deg, #0a1a5c 0%, #1a4a9e 50%, #0d2b6e 100%);
+}
+
+/* Cercles décoratifs bleus */
+.cercle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.2;
+}
+
+.cercle-1 {
+    width: 600px;
+    height: 600px;
+    background: #4ea8f5;
+    top: -200px;
+    left: -150px;
+}
+
+.cercle-2 {
+    width: 450px;
+    height: 450px;
+    background: #185FA5;
+    bottom: -150px;
+    right: -120px;
+}
+
+.cercle-3 {
+    width: 250px;
+    height: 250px;
+    background: #aad4f7;
+    top: 45%;
+    left: 55%;
+}
+
+/* ===========================
+   CONTENU PRINCIPAL
+=========================== */
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 24px 60px;
+}
+
+/* ===========================
+   HERO — TITRE
+=========================== */
+.hero {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.titre {
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.accent {
+    color: #aad4f7;
+}
+
+.sous-titre {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.65);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* ===========================
+   LIGNE DÉCORATIVE
+=========================== */
+.ligne {
+    width: 60px;
+    height: 4px;
+    background: #4ea8f5;
+    border-radius: 2px;
+    margin: 16px auto 0;
+}
+
+/* ===========================
+   SECTION PROFIL
+=========================== */
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 36px;
+    margin-bottom: 40px;
+}
+
+.photo-wrapper {
+    flex-shrink: 0;
+}
+
+.photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4ea8f5;
+    display: block;
+}
+
+.nom {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.ecole {
+    font-size: 15px;
+    color: #aad4f7;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.80);
+    margin-bottom: 20px;
+}
+
+/* ===========================
+   BADGES
+=========================== */
+.badges {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background: rgba(78, 168, 245, 0.20);
+    border: 1px solid rgba(78, 168, 245, 0.50);
+    color: #aad4f7;
+    font-size: 13px;
+    padding: 5px 14px;
+    border-radius: 20px;
+}
+
+/* ===========================
+   SECTION À PROPOS
+=========================== */
+.a-propos {
+    margin-bottom: 40px;
+}
+
+.section-titre {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.cartes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.carte {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 24px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.carte:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(78, 168, 245, 0.5);
+}
+
+.carte-icone {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.carte h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #aad4f7;
+}
+
+.carte p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.70);
+    line-height: 1.6;
+}
+
+/* ===========================
+   SECTION CONTACT
+=========================== */
+.contact {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 28px 32px;
+    margin-bottom: 40px;
+}
+
+.contact-ligne {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.80);
+    margin-top: 12px;
+}
+
+.icone {
+    font-size: 18px;
+}
+
+/* ===========================
+   PIED DE PAGE
+=========================== */
+.pied {
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.35);
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+/* ===========================
+   RESPONSIVE MOBILE
+=========================== */
+@media (max-width: 650px) {
+    .titre { font-size: 34px; }
+
+    .profil {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
+        gap: 24px;
+    }
+
+    .ecole { justify-content: center; }
+    .badges { justify-content: center; }
+    .cartes { grid-template-columns: 1fr; }
+}
